@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calcul IMC</title>
+<script>
+function calculateBMI() {
+    var weight = document.getElementById('weight').value;
+    var height = document.getElementById('height').value;
+    var bmi = weight / (height * height);
+    alert("Indicele dumneavoastră de masă corporală este: " + bmi.toFixed(2));
+}
+</script>
+</head>
+<body>
+<h1>Calculator IMC</h1>
+Greutate (kg): <input type="number" id="weight"><br>
+Înălțime (m): <input type="number" id="height" step="0.01"><br>
+<button onclick="calculateBMI()">Calculează IMC</button>
+</body>
+</html>
